@@ -20,7 +20,7 @@ const SignUp = () => {
         e.preventDefault();
 
       try {
-        const { data } = await axios.post("/api/v1/register", { name, email, password }, { "Content-Type": "application/json" });
+        const { data } = await axios.post("https://atg-assignment-eight.vercel.app/api/v1/register", { name, email, password }, { "Content-Type": "application/json" });
         console.log(data);
 
         navigate("/dashboard");
