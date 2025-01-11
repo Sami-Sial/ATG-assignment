@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      "/api/v1/register": "htp://localhost:8080",
-      "/api/v1/login": "htp://localhost:8080",
-      "/api/v1/password/forgot": "htp://localhost:8080",
+      "/api/v1/register": "https://atg-assignment-eight.vercel.app",
+      "/api/v1/login": "https://atg-assignment-eight.vercel.app",
+      "/api/v1/password/forgot": "https://atg-assignment-eight.vercel.app",
     }
   },
   plugins: [react()],

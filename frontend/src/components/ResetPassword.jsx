@@ -15,7 +15,7 @@ const ResetPassword = () => {
     e.preventDefault();
 
     try {
-      const { data } = axios.put(`http://localhost:8080/api/v1/password/reset/${token}`, { password, confirmPassword }, {"COntent-Type": "application/json"});
+      const { data } = axios.put(`https://atg-assignment-eight.vercel.app/api/v1/password/reset/${token}`, { password, confirmPassword }, {"COntent-Type": "application/json"});
       console.log(data);
   
       toast.success("Password Updated Successfully");
